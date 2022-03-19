@@ -1,0 +1,5 @@
+apiVersion: v2
+appVersion: "1.0"
+description: A Helm chart for greeting service
+name: greeting
+version: 1.0.0

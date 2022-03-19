@@ -1,0 +1,20 @@
+replicaCount: 2
+
+image:
+  repository: mydeveloperaccount/dockerdemo
+  tag: v2
+
+nameOverride: ""
+fullnameOverride: ""
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  hosts:
+    host: "kubernetes.docker.internal"
+    paths: "/"
+
+environment:
+  MESSAGE: "Hello from the helm chart values!"
