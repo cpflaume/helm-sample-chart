@@ -1,6 +1,6 @@
-r eplicaCount: 1
+replicaCount: 1
 
- image:
+image:
   repository: mydeveloperaccount/dockerdemo
   tag: v3
 
