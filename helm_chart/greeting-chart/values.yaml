@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: mydeveloperaccount/dockerdemo
-  tag: v1
+  tag: v2
 
 nameOverride: ""
 fullnameOverride: ""
@@ -17,4 +17,4 @@ ingress:
     paths: "/"
 
 environment:
-  MESSAGE: "Hello from the helm chart values!"
+  MESSAGE: "Hello from the helm chart values! Hello you all!"
