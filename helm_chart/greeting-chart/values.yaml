@@ -1,8 +1,8 @@
-replicaCount: 2
+replicaCount: 1
 
 image:
   repository: mydeveloperaccount/dockerdemo
-  tag: v2
+  tag: v1
 
 nameOverride: ""
 fullnameOverride: ""
