@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: {{ include "greeting-chart.name" . }}-ingress
+  name: {{ include "greeting-chart.fullname" . }}-ingress
   labels:
     app: {{ include "greeting-chart.name" . }}
 spec:
@@ -14,6 +14,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: {{ include "greeting-chart.name" . }}-service
+                name: {{ include "greeting-chart.fullname" . }}-service
                 port:
                   number: 80
