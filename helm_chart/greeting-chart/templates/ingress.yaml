@@ -5,6 +5,7 @@ metadata:
   labels:
     app: {{ include "greeting-chart.name" . }}
 spec:
+  ingressClassName: "nginx"
   rules:
     - host: {{ .Values.ingress.hosts.host }}
       http:
