@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: mydeveloperaccount/dockerdemo
-  tag: v2
+  tag: v3
 
 nameOverride: ""
 fullnameOverride: ""
